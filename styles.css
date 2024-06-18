@@ -1,0 +1,88 @@
+.wrapper {
+    font-family: Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+
+.title {
+    animation: title 3s 1;
+    padding-left: 5vw;
+    letter-spacing: normal;
+}
+
+@keyframes title {
+    0% {
+        letter-spacing: 2vw;
+        left: 10vw;
+    }
+
+    85% {
+        letter-spacing: normal;
+        left: 2vw;
+    }
+}
+
+.title_text {
+    font-size: 6vw;
+    text-align: left;
+}
+
+.side {
+    background-color: #178CA4;
+    float: left;
+    height: 70vh;
+    width: 15vw;
+    text-align: center;
+}
+
+.main {
+    background-color: #1f2121e5;
+    color: rgba(255, 255, 255, 0.609);
+    padding-top: 0.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 0.5vh;
+    margin: 2vw;
+    
+}
+
+.main h1 {
+    padding-left: 1vw;
+}
+.main h2 {
+    padding-left: 3vw;
+}
+.main h3 {
+    padding-left: 5vw;
+}
+.main ul {
+    list-style-type: none;
+    padding-left: 7vw;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+    padding-left: 10vw;
+    font-size: 2vw;
+    display: block;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 0.5vw;
+    color: black;
+    
+}
+
+.navbar a:hover {
+    color: #d5782c;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+    <title>Portfolio</title>
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+      
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 1000, function(){
+         
+              // when the page is reloaded it resets the scrolling position 
+              window.location.hash;
+            });
+          } // End if
+        });
+      });
+</script>
+</head>
+<body style = "background-color: #ddd3ab;">
+
+    <div class = "wrapper">
+        <nav class = "navbar">
+            <ul>
+                <li style = "padding-left: 2.5vw;"><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cv">CV</a></li>
+            </ul>
+        </nav>
+
+
+        <div class = "title">
+            <h1 class = "title_text"> Dylan Caddick </h1>
+        </div>
+        <div class = "main">
+            <img style="float: right; width: 30%; height: auto;" src="pic2.jpeg" alt="A picture of me.">
+            <h1 id = "about">About</h1>
+            
+            <h2> Education </h2>
+                <h3> University of Manchester - Current Degree</h3>
+                    <ul>
+                        <li>Computer Science Bsc</li>
+                    </ul>
+                <h3> Brighton, Hove and Sussex Sixth Form College - 3 A levels and 1 AS level</h3>
+                    <ul>
+                        <li>Computer Science: A*</li>
+                        <li>Maths: A*</li>
+                        <li>Biology: A*</li>
+                        <li>AS Further Maths: A</li>
+                    </ul>
+                <h3> Dorothy String High School - 8 GCSE's </h3>
+                    <ul>
+                        <li>Computer Science: 9</li>
+                        <li>Maths: 9</li>
+                        <li>Science: 99</li>
+                        <li>History: 9</li>
+                        <li>Religious Studies: 7</li>
+                        <li>English Language: 7</li>
+                        <li>English Literature: 6</li>
+                        <li>Music Performance: Distinction</li>
+                    </ul>
+
+            <h2> Experience </h2>
+
+            <h3>Evolution Simulation - A level coursework mark 70/70</h3>
+            <ul>
+                <li>
+                <p>Made in Unity with C++ for A-level coursework, achieving full marks. Involved procedural generation of a random 3D map with water and terrain. It involved the life cycle of Rabbits with basic attributes - eating, drinking and reproduction - which evolved over time. This is a very basic form of AI, representing 'Survival of the Fittest', showing a real life example of a genetic algorithm.</p>
+                </li>
+            </ul>
+
+            <h3>UCL Short Course in Data Science with R</h3>
+            <ul><p>A national short course focused in R, in which I won the competition at the end. This used basic data analysis tech- niques, to check accuracy of programs using practice data. Then performing queries and predictions on a database and presenting the results in a graphical format for the user.</p></ul>
+            </ul>
+            <h3>Fitness Application</h3>
+            <ul>
+                <li>
+                <p>Made in HTML, CSS, PHP, Javascript. This application was created by a group of seven students, including myself. It helps users plan and achieve weekly fitness goals, along with providing them with basic stats. The concept involved using databases with a further aim of adding a Strava API in back-end development.</p>
+                </li>
+            </ul>
+            
+            <h2> Achievements and Awards </h2>
+
+            <h2> Future Plans </h2>
+
+            <p>add waffle</p>
+            <p>Add achievements</p>
+            <h1 id = "projects">Projects</h1>
+            <p>TO ADD: unity project download link and pdf</p>
+            <h1 id = "contact">Contact</h1>
+            <p>TO ADD: LinkedIn, Gitlab, email and number</p>
+            <h1 id = "cv">CV</h1>
+            <p> Download of CV available <a style = "color: rgba(255, 255, 255, 0.609); text-decoration: underline;" href ="CV.pdf" attributes-list download > here </a></p>
+            <object
+            type = "application/pdf"
+            data = "CV.pdf"
+            style = "width: 80vw; height: 80vh;"></object>
+
+        </div>
+        <div class = "footer"> </div>
+    </div>
+</body>
+
+</html>
