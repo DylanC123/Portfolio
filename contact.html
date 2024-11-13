@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+    <title>Portfolio</title>
+</head>
+
+<script>
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<body style = "background-color: #ddd3ab;"></bodystyle>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+
+     <!-- Use any element to open the sidenav -->
+     <span style = "font-size: 4rem;" onclick = openNav()>...</span>
+     <div id="contact_wrapper">
+        <div id="contact"><i style = "margin-right: 1rem;" class = "bi bi-linkedin"></i><a href = "https://www.linkedin.com/in/dylancaddick/">LinkedIn</a></div>
+        <div><i style = "margin-right: 1rem;" class="bi bi-github"></i>GitHub</div>
+        <div><i style = "margin-right: 1rem;" class="bi bi-envelope-fill"></i><a href= "mailto: name@email.com"> dylanx@virginmedia.com</a></div>
+        <div><i style = "margin-right: 1rem;" class="bi bi-telephone-fill"></i><a href="tel:07421324933">+44 7421324933</a></div>
+    </div>
+</body>
+</html>
